@@ -1,0 +1,145 @@
+/* Reset some default styles for consistency */
+body, h1, p, form, label, input, select, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Global styles */
+  body {
+    background-color: #f5f5f5;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Hero Image Section */
+.hero-image {
+    position: relative;
+    height: 400px;
+    background-image: url('images/v.jpg'); /* Replace with the path to your hero image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  max-width: 600px; /* Limit the width of the content to prevent it from spanning the entire screen */
+  padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+/* Visa Application Process Section */
+/* Your existing styles */
+
+/* Visa Application Process Section */
+.visa-application-process {
+    padding: 80px 0;
+    background-color: #f7f7f7;
+  }
+
+  .visa-application-process h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .process-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .step {
+    flex: 0 0 calc(25% - 20px); /* Adjust the width based on the number of steps you have */
+    max-width: 200px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .step img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+
+  .step h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .step p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+  }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Information</title>
+  <link rel="stylesheet" href="/css/Flightsstyle.css">
+</head>
+<body>
+<h1>Current Flights</h1>
+<div id="flightList">
+  <!-- Flight information will be dynamically added here -->
+</div>
+
+<script>
+  // Function to fetch flight data from AviationStack API
+  async function fetchFlights() {
+    const apiKey = '0372a705284fdee2847fb6429c749f4e';
+    const url = `http://api.aviationstack.com/v1/flights?access_key=${apiKey}`;
+
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+
+      const flightList = document.getElementById('flightList');
+      data.data.forEach(flight => {
+        const flightInfo = document.createElement('div');
+        flightInfo.classList.add('flight');
+        flightInfo.innerHTML = `
+          <p><strong>Flight Number:</strong> ${flight.flight.number}</p>
+          <p><strong>Airline:</strong> ${flight.airline.name}</p>
+          <p><strong>Departure Airport:</strong> ${flight.departure.airport}</p>
+          <p><strong>Departure Time:</strong> ${flight.departure.estimated}</p>
+          <p><strong>Arrival Airport:</strong> ${flight.arrival.airport}</p>
+          <p><strong>Arrival Time:</strong> ${flight.arrival.estimated}</p>
+        `;
+        flightList.appendChild(flightInfo);
+      });
+    } catch (error) {
+      console.error('Error fetching flight data:', error);
+    }
+  }
+
+  // Call the fetchFlights function when the page loads
+  document.addEventListener('DOMContentLoaded', fetchFlights);
+</script>
+</body>
+</html>

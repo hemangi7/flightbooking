@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #87CEFA;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .flight {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #B0C4DE;
+  }
+
+  .flight p {
+    margin: 5px 0;
+  }
+
+  /* Optional: Add some styling for the flight list container */
+  #flightList {
+    max-width: 600px;
+    margin: 0 auto;
+  }

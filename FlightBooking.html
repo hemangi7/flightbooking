@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Travel Booking App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<header>
+    <div class="container">
+
+        <nav class="navbar">
+            <img src="images/logo.jpg">
+            <h1 class="logo">Fly Me</h1>
+            <a class="nav-item" href="Flights.html"><i class="fa fa-plane" style="font-size:24px">Flights</i></a>
+            <a class="nav-item" href="Visa.html"><i class="fa fa-cc-visa" style="font-size:24px">Visa</i></a>
+            <a class="nav-item" href="ContactUs.html"><i class="fa fa-phone" style="font-size: 24px">Contact Us</i></a>
+            <a class="nav-item" href="Login.html"><i class="fa fa-user" style="font-size:24px">Login</i></a>
+
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Find Your Perfect Travel Deal</h1>
+        <p>Compare prices from top travel sites and save big on your next trip!</p>
+        <p>search • book • fly</p>
+    </div>
+</section>
+
+<section class="search-form">
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="source">From:</label>
+                <input type="text" id="source" placeholder="Enter source city" required>
+            </div>
+            <div class="form-group">
+                <label for="destination">To:</label>
+                <input type="text" id="destination" placeholder="Enter destination city" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Departure Date:</label>
+                <input type="date" id="departureDate" required>
+            </div>
+            <div class="form-group">
+                <label for="passengerCount">Passengers:</label>
+                <input type="number" id="passengers" min="1" required>
+            </div>
+            <button type="submit" id="searchButton">Search Flights</button>
+        </form>
+    </div>
+</section>
+
+<section class="popular-routes">
+    <div class="container">
+        <h2>Popular Flight Routes</h2>
+        <div class="route-cards">
+            <div class="route-card">
+                <img src="images/route1.jpg" alt="Flight Route 1">
+                <h3>New York to London</h3>
+                <p>Book a flight from New York to London at the best prices!</p>
+            </div>
+            <div class="route-card">
+                <img src="images/route3.jpg" alt="Flight Route 2">
+                <h3>Mumbai to Goa</h3>
+                <p>Explore Tokyo from Los Angeles with our exclusive offers.</p>
+            </div>
+            <div class="route-card">
+                <img src="images/route4.jpg" alt="Flight Route 2">
+                <h3>Delhi to Kochi</h3>
+                <p>Explore Tokyo from Los Angeles with our exclusive offers.</p>
+            </div>
+            <!-- Add more route-cards as needed -->
+        </div>
+    </div>
+</section>
+
+<section class="top-airlines-section">
+    <h2>Top Airlines for You</h2>
+    <div class="airline-logos">
+        <a href="https://www.airindia.com" target="_blank">
+            <img src="images/airindia.jpg" alt="Air India" class="airline-logo">
+            <h3>Air India</h3>
+        </a>
+        <a href="https://www.lufthansa.com/in/en/homepage" target="_blank">
+            <img src="images/lufthansa.jpg" alt="Lufthansa" class="airline-logo">
+            <h3>Lufthansa</h3>
+        </a>
+        <div class="airline-logos">
+            <a href="https://www.emirates.com" target="_blank">
+                <img src="images/emirates.jpg" alt="Emirates" class="airline-logo">
+                <h3>Emirates</h3>
+            </a>
+            <a href="https://www.goindigo.in/" target="_blank">
+                <img src="images/indigo.jpg" alt="Indigo" class="airline-logo">
+                <h3>Indigo</h3>
+            </a>
+            <div class="airline-logos">
+                <a href="https://www.spicejet.com/" target="_blank">
+                    <img src="images/spicejet.jpg" alt="Spicejet" class="airline-logo">
+                    <h3>Spice Jet</h3>
+                </a>
+                <a href="https://www.airvistara.com/" target="_blank">
+                    <img src="images/vistara.jpg" alt="Vistara" class="airline-logo">
+                    <h3>Vistara</h3>
+                </a>
+                <div class="airline-logos">
+                    <a href="https://www.qatarairways.com/" target="_blank">
+                        <img src="images/qatar.jpg" alt="Qatar" class="airline-logo">
+                        <h3>Qatar Airways</h3>
+                    </a>
+                    <a href="https://www.singaporeair.com" target="_blank">
+                        <img src="images/singair.jpg" alt="Singapore Airlines" class="airline-logo">
+                        <h3>Singapore Airways</h3>
+                    </a>
+                </div>
+</section>
+
+<section class="faq-section">
+    <div class="container">
+        <h2>Flight Booking FAQs</h2>
+        <div class="faq-item">
+            <h3>How do I book a flight?</h3>
+            <p>In order to book flight ticket logon, enter departure and arrival destination, travel dates, number of
+                passengers and travel class to get a list of all available flights that you can compare and choose from.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I change my flight booking?</h3>
+            <p>You can change the time or date of your booking but change fee and fare difference may apply on top of the
+                price you have paid in your purchase earlier.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I cancel my flight?</h3>
+            <p>Wish to cancel your booking? Enter your PNR/Booking reference number, mention your email ID/Last name and
+                proceed for cancellation.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Travel Booking. All rights reserved.</p>
+</footer>
+<script src="/js/Search.js"></script>
+</body>
+
+</html>

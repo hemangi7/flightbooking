@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Visa Application</title>
+    <link rel="stylesheet" href="/css/Visastyles.css">
+</head>
+<body>
+<section class="visa-application-process">
+    <div class="container">
+        <section class="hero-image">
+            <div class="hero-content">
+                <h1>Apply for a Visa Online</h1>
+                <p>Travel with ease and convenience. Apply for your visa from anywhere in the world.</p>
+            </div>
+        </section>
+        <div class="container">
+            <h1>Online Visa Application</h1>
+            <form id="visa-application-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="passport-number">Passport Number</label>
+                    <input type="text" id="passport-number" name="passport-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="nationality">Nationality</label>
+                    <input type="text" id="nationality" name="nationality" required>
+                </div>
+                <div class="form-group">
+                    <label for="visa-type">Visa Type</label>
+                    <select id="visa-type" name="visa-type" required>
+                        <option value="" selected disabled>Select Visa Type</option>
+                        <option value="tourist">Tourist Visa</option>
+                        <option value="business">Business Visa</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="travel-dates">Travel Dates</label>
+                    <input type="date" id="travel-dates" name="travel-dates" required>
+                </div>
+                <div class="form-group">
+                    <label for="additional-info">Additional Information</label>
+                    <textarea id="additional-info" name="additional-info" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit Application</button>
+                </div>
+            </form>
+
+        </div>
+        <h2>Online Visa Application Process</h2>
+        <div class="process-steps">
+            <div class="step">
+                <img src="/images/step1.jpg" alt="Step 1">
+                <h3>Fill out the Application Form</h3>
+                <p>Provide your personal details and travel information in the online visa application form.</p>
+            </div>
+            <div class="step">
+                <img src="/images/step2.jpg" alt="Step 2">
+                <h3>Submit Required Documents</h3>
+                <p>Upload scanned copies of your passport, photo, and other necessary documents.</p>
+            </div>
+            <div class="step">
+                <img src="/images/step3.jpg" alt="Step 3">
+                <h3>Make Payment</h3>
+                <p>Pay the visa application fee securely using various payment methods.</p>
+            </div>
+            <div class="step">
+                <img src="/images/step4.jpg" alt="Step 4">
+                <h3>Review and Submit</h3>
+                <p>Review your application details carefully before final submission.</p>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

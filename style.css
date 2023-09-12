@@ -1,0 +1,219 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styling */
+  header {
+    display: flex;
+    background-color: #f6f6f6;
+    padding: 10px 0;
+
+  }
+  img {
+    border-radius: 50%;
+    width: 10%; /* Adjust the size of the logo image to fit the container */
+    height: auto;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .nav-item:hover {
+    color: #007bff;
+  }
+  
+  /* Hero Section Styling */
+  .hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+  }
+  
+  /* Flight Search Form Styling */
+  .search-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f6f6f6;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="date"],
+  .form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-group button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Popular Flight Routes Section */
+.popular-routes {
+  padding: 80px 0;
+  background-color: #f7f7f7;
+}
+
+.popular-routes h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.route-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.route-card {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust the width based on the number of cards you have */
+  max-width: 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.route-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.route-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.route-card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.top-airlines-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.top-airlines-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.top-airlines-section a{
+  color: #333;
+  text-decoration: none;
+}
+
+.airline-logos {
+  display: flex;
+  justify-content: center;
+}
+
+.airline-logo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+  /* Add shadow effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+  /* FAQs Section Styling */
+.faq-section {
+    background-color: #f6f6f6;
+    padding: 40px 0;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .faq-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
